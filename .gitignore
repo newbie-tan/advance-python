@@ -1,0 +1,17 @@
+*.pyc
+*.swp
+/tags
+/.venv
+/.env
+
+# jetbrains config
+/.idea
+
+/tonyScrpts/*
+*/tonyScrpts/*
+*/tonyScrpts/*
+tonyScrpts/*
+
+
+/tonyScrpts/*.*
+tonyScrpts/*.*
