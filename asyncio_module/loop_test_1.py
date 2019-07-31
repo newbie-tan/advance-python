@@ -14,22 +14,20 @@ import asyncio
 
 
 async def get_html(url):
-	print("start get html")
-	await asyncio.sleep(1)
-	print("end get html")
+    print("start get html")
+    await asyncio.sleep(1)
+    print("end get html")
 
 
 if __name__ == '__main__':
-	import time
+    import time
 
-	# 1. 创建事件循环器
-	# 2. 将协程任务防止到async-io 调度队列中
-	# 3. async-io异步的调度协程任务
+    # 1. 创建事件循环器
+    # 2. 将协程任务防止到async-io 调度队列中
+    # 3. async-io异步的调度协程任务
 
-	start_time = time.time()
-	loop = asyncio.get_event_loop()
-	tasks = [get_html("http://www.imooc.com") for i in range(10)]
-	loop.run_until_complete(asyncio.wait(tasks))
-	print(time.time() - start_time)
-
-
+    start_time = time.time()
+    loop = asyncio.get_event_loop()
+    tasks = [get_html("http://www.imooc.com") for i in range(10)]
+    loop.run_until_complete(asyncio.wait(tasks))
+    print(time.time() - start_time)

@@ -1,0 +1,1155 @@
+{
+    "application": {
+        "name": "application",
+        "component": "Layout",
+        "title": "申请管理",
+        "icon": "日志",
+        "nav": 1,
+        "children": {
+            "loan_order_list": {
+                "name": "loan_order_list",
+                "title": "全部申请",
+                "icon": "example",
+                "component": "allReviewCases",
+                "nav": 1,
+                "children": {}
+            },
+            "loan_order_assignment_list": {
+                "name": "loan_order_assignment_list",
+                "title": "分件管理",
+                "icon": "contacts-fill",
+                "component": "caseAsssignment",
+                "nav": 1,
+                "children": {}
+            },
+            "mine_case_menu": {
+                "name": "mine_case_menu",
+                "title": "我的案件",
+                "icon": "people",
+                "component": "myReviewCases",
+                "nav": 1,
+                "children": {
+                    "first_review_list": {
+                        "name": "first_review_list",
+                        "title": "初审案件",
+                        "icon": "通知",
+                        "component": "firstReviewCases",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "second_review_list": {
+                        "name": "second_review_list",
+                        "title": "复审案件",
+                        "icon": "安全知识-应急常识库",
+                        "component": "secondReviewCases",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "final_review_list": {
+                        "name": "final_review_list",
+                        "title": "终审案件",
+                        "icon": "双公示-行政许可",
+                        "component": "finalReviewCases",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "history_review_list": {
+                        "name": "history_review_list",
+                        "title": "历史案件",
+                        "icon": "双公示-行政许可",
+                        "component": "reviewHistoryCases",
+                        "nav": 1,
+                        "children": []
+                    }
+                }
+            }
+        }
+    },
+    "customer": {
+        "name": "customer",
+        "component": "Layout",
+        "title": "客户管理",
+        "icon": "产品模版管理",
+        "nav": 1,
+        "children": {
+            "user_sms_list": {
+                "name": "user_sms_list",
+                "title": "客户短信",
+                "icon": "日志",
+                "component": "customerSms",
+                "children": {},
+                "nav": 1
+            },
+            "customerAuthentication": {
+                "title": "客户认证",
+                "name": "customerAuthentication",
+                "icon": "验证",
+                "nav": 1,
+                "component": "customerAuthentication",
+                "children": {}
+            },
+            "all_user_list": {
+                "name": "all_user_list",
+                "title": "全部客户",
+                "icon": "form",
+                "component": "allCustomer",
+                "nav": 1,
+                "children": {}
+            }
+        }
+    },
+    "finance": {
+        "name": "finance",
+        "component": "Layout",
+        "title": "财务管理",
+        "icon": "faxian",
+        "nav": 1,
+        "children": {
+            "repayment_list": {
+                "name": "repayment_list",
+                "title": "还款查询",
+                "icon": "双公示-行政许可",
+                "component": "deposits",
+                "nav": 1,
+                "children": {}
+            },
+            "loan_money_list": {
+                "nav": 1,
+                "name": "loan_money_list",
+                "title": "放款查询",
+                "icon": "bug",
+                "component": "loanIssues",
+                "children": {}
+            },
+            "loan_balance_list": {
+                "name": "loan_balance_list",
+                "title": "财务平账",
+                "icon": "money",
+                "component": "financeBalance",
+                "nav": 1,
+                "children": {}
+            },
+            "issue_fail_get": {
+                "nav": 1,
+                "title": "线下放款",
+                "name": "issue_fail_get",
+                "component": "financeIssue",
+                "children": {},
+                "icon": "money"
+            },
+            "loan_balance_log_list": {
+                "name": "loan_balance_log_list",
+                "title": "手动平账和放款明细",
+                "icon": "数据报表",
+                "component": "financeBalanceLog",
+                "children": {},
+                "nav": 1
+            }
+        }
+    },
+    "collection": {
+        "name": "collection",
+        "component": "Layout",
+        "title": "催收管理",
+        "icon": "设备开发",
+        "nav": 1,
+        "children": {
+            "collection_callrecord_list": {
+                "name": "collection_callrecord_list",
+                "title": "通话记录",
+                "icon": "faxian",
+                "component": "callRecord",
+                "nav": 1,
+                "children": {}
+            },
+            "collection_mine_list": {
+                "name": "collection_mine_list",
+                "title": "我的案件",
+                "icon": "people",
+                "component": "myCase",
+                "nav": 1,
+                "children": {}
+            },
+            "collection_current_list": {
+                "name": "collection_current_list",
+                "title": "催收案件",
+                "icon": "excel",
+                "component": "collectionCases",
+                "nav": 1,
+                "children": {}
+            },
+            "collection_assign_list": {
+                "name": "collection_assign_list",
+                "title": "案件分配",
+                "icon": "分类",
+                "component": "caseAssign",
+                "nav": 1,
+                "children": {}
+            },
+            "collection_workbench_list": {
+                "name": "collection_workbench_list",
+                "title": "催收工作台",
+                "icon": "contacts-fill",
+                "component": "workbench",
+                "nav": 1,
+                "children": {}
+            },
+            "collection_collector_list": {
+                "name": "collection_collector_list",
+                "title": "催收人员",
+                "icon": "flag-fill",
+                "component": "collector",
+                "nav": 1,
+                "children": {}
+            }
+        }
+    },
+    "systemreport": {
+        "name": "systemreport",
+        "component": "Layout",
+        "title": "系统报表",
+        "icon": "数据报表",
+        "nav": 1,
+        "children": {
+            "financeReport": {
+                "nav": 1,
+                "name": "financeReport",
+                "component": "financeReport",
+                "title": "财务报表",
+                "icon": "money",
+                "children": {
+                    "tech_server_detail": {
+                        "name": "tech_server_detail",
+                        "title": "技术服务费明细",
+                        "component": "",
+                        "nav": 1,
+                        "icon": "数据报表",
+                        "children": []
+                    },
+                    "issues_list": {
+                        "name": "issues_list",
+                        "title": "放款明细",
+                        "icon": "数据报表",
+                        "component": "issueReport",
+                        "children": [],
+                        "nav": 1
+                    },
+                    "deposits_list": {
+                        "name": "deposits_list",
+                        "title": "还款明细",
+                        "icon": "数据报表",
+                        "component": "depositsReport",
+                        "children": [],
+                        "nav": 1
+                    },
+                    "inout_list": {
+                        "name": "inout_list",
+                        "title": "财务现金流水",
+                        "icon": "money",
+                        "component": "inoutReport",
+                        "children": [],
+                        "nav": 1
+                    },
+                    "fund_period_list": {
+                        "name": "fund_period_list",
+                        "title": "财务账龄报表",
+                        "icon": "数据报表",
+                        "component": "fundPeriodReport",
+                        "children": [],
+                        "nav": 1
+                    },
+                    "total_assets_list": {
+                        "name": "total_assets_list",
+                        "title": "平台总资产",
+                        "icon": "数据报表",
+                        "component": "fundPeriodReport",
+                        "children": [],
+                        "nav": 1
+                    }
+                }
+            },
+            "operationReport": {
+                "title": "运营报表",
+                "name": "operationReport",
+                "icon": "设置",
+                "component": "operationReport",
+                "children": {
+                    "day_count_list": {
+                        "name": "day_count_list",
+                        "title": "平台每日统计",
+                        "icon": "数据报表",
+                        "component": "platformDailyStatistics",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "register_list": {
+                        "name": "register_list",
+                        "title": "VTG-注册口径",
+                        "icon": "数据报表",
+                        "component": "vtgRegisterCriteria",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "注册申请转换漏斗": {
+                        "title": "注册申请转换漏斗",
+                        "name": "注册申请转换漏斗",
+                        "icon": "数据报表",
+                        "children": [],
+                        "nav": 1
+                    },
+                    "again_loan_list": {
+                        "name": "again_loan_list",
+                        "title": "VTG-复借口径",
+                        "icon": "数据报表",
+                        "component": "vintageReapply",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "VTG-到期": {
+                        "title": "VTG-到期",
+                        "name": "VTG-到期",
+                        "icon": "数据报表",
+                        "children": [],
+                        "nav": 1
+                    },
+                    "customer_info_list": {
+                        "name": "customer_info_list",
+                        "title": "客户信息",
+                        "component": "",
+                        "nav": 1,
+                        "children": [],
+                        "icon": "数据报表"
+                    },
+                    "conversion_list": {
+                        "name": "conversion_list",
+                        "title": "渠道转化",
+                        "icon": "数据报表",
+                        "component": "channelConversion",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "每日渠道转换": {
+                        "title": "每日渠道转换",
+                        "name": "每日渠道转换",
+                        "component": "",
+                        "icon": "数据报表",
+                        "children": [],
+                        "nav": 1
+                    },
+                    "over_period_list": {
+                        "name": "over_period_list",
+                        "title": "贷款逾期情况",
+                        "icon": "guide 2",
+                        "component": "overdueReport",
+                        "children": [],
+                        "nav": 1
+                    }
+                },
+                "nav": 1
+            },
+            "collectionReport": {
+                "title": "催收报表",
+                "name": "collectionReport",
+                "icon": "star",
+                "component": "collectionReport",
+                "children": {
+                    "collection_log_list": {
+                        "name": "collection_log_list",
+                        "title": "催收员日志",
+                        "icon": "数据报表",
+                        "component": "collectorLog",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "collection_details_list": {
+                        "name": "collection_details_list",
+                        "title": "催收任务详情",
+                        "icon": "数据报表",
+                        "component": "collectionEffect",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "collection_statistics_list": {
+                        "name": "collection_statistics_list",
+                        "title": "催收统计",
+                        "icon": "数据报表",
+                        "component": "collectionEfficiency",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "collection_send_details": {
+                        "name": "collection_send_details",
+                        "title": "短信发送详情",
+                        "icon": "数据报表",
+                        "component": "sendSmsDetail",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "collection_send_count": {
+                        "name": "collection_send_count",
+                        "title": "短信发送统计",
+                        "icon": "数据报表",
+                        "component": "snedSmsStatistics",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "collection_extension": {
+                        "name": "collection_extension",
+                        "title": "展期报表",
+                        "icon": "数据报表",
+                        "component": "rollover",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "collection_recall_amount": {
+                        "name": "collection_recall_amount",
+                        "title": "催回金额明细",
+                        "icon": "数据报表",
+                        "component": "recallAmount",
+                        "nav": 1,
+                        "children": []
+                    }
+                },
+                "nav": 1
+            },
+            "applicationReport": {
+                "title": "审批报表",
+                "name": "applicationReport",
+                "icon": "安全知识-应急常识库",
+                "component": "applicationReport",
+                "children": {
+                    "verify_list": {
+                        "name": "verify_list",
+                        "title": "贷款用户认证信息",
+                        "icon": "",
+                        "component": "",
+                        "children": [
+                            {
+                                "name": "auth_job_get",
+                                "path": "/admin/user_auth_job/{user_id}",
+                                "method": "GET",
+                                "title": "获取工作认证信息",
+                                "component": "",
+                                "children": []
+                            },
+                            {
+                                "name": "auth_personal_get",
+                                "path": "/admin/user_auth_personal/{user_id}",
+                                "method": "GET",
+                                "title": "获取个人认证信息",
+                                "component": "",
+                                "children": []
+                            },
+                            {
+                                "name": "auth_personal_put",
+                                "path": "/admin/user_auth_personal",
+                                "method": "PUT",
+                                "title": "修改个人认证信息",
+                                "component": "",
+                                "children": []
+                            },
+                            {
+                                "name": "auth_identity_get",
+                                "path": "/admin/user_auth_identity/{user_id}",
+                                "method": "GET",
+                                "title": "获取身份认认证信息",
+                                "component": "",
+                                "children": []
+                            },
+                            {
+                                "name": "auth_job_put",
+                                "path": "/admin/user_auth_job",
+                                "method": "PUT",
+                                "title": "修改工作认证信息",
+                                "component": "",
+                                "children": []
+                            },
+                            {
+                                "name": "auth_contact_put",
+                                "path": "/admin/user_auth_contact",
+                                "method": "PUT",
+                                "title": "修改联系人认证信息",
+                                "component": "",
+                                "children": []
+                            },
+                            {
+                                "name": "auth_identity_put",
+                                "path": "/admin/user_auth_identity",
+                                "method": "PUT",
+                                "title": "修改身份认认证信息",
+                                "component": "",
+                                "children": []
+                            },
+                            {
+                                "name": "auth_contact_get",
+                                "path": "/admin/user_auth_contact/{user_id}",
+                                "method": "GET",
+                                "title": "获取联系人认证信息",
+                                "component": "",
+                                "children": []
+                            }
+                        ]
+                    },
+                    "loan_user_del": {
+                        "name": "loan_user_del",
+                        "title": "注销用户",
+                        "icon": "",
+                        "component": "",
+                        "children": []
+                    },
+                    "deal_list": {
+                        "name": "deal_list",
+                        "title": "审批处理效率",
+                        "icon": "写作",
+                        "component": "reviewEfficiencyTotal",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "deal_efficiency_list": {
+                        "name": "deal_efficiency_list",
+                        "title": "审批处理效率明细",
+                        "icon": "fire-fill",
+                        "component": "reviewEfficiencyDetail",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "trial_list": {
+                        "name": "trial_list",
+                        "title": "审批统计",
+                        "icon": "eye-open",
+                        "component": "reviewEfficiency",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "order_review_history_list": {
+                        "title": "审批历史",
+                        "name": "order_review_history_list",
+                        "icon": "faxian",
+                        "nav": 1,
+                        "component": "approvalHistoryList",
+                        "children": []
+                    },
+                    "review_reject_log_list": {
+                        "nav": 1,
+                        "title": "审批拒绝原因",
+                        "name": "review_reject_log_list",
+                        "icon": "lock",
+                        "component": "approvalRefusedLog",
+                        "children": []
+                    }
+                },
+                "nav": 1
+            },
+            "performanceReport": {
+                "title": "业绩报表",
+                "name": "performanceReport",
+                "icon": "tree",
+                "component": "performanceReport",
+                "children": {
+                    "collection_performance": {
+                        "name": "collection_performance",
+                        "title": "我的催收业绩",
+                        "icon": "数据报表",
+                        "component": "myCollectionPerformance",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "myApplicationPerformance": {
+                        "title": "我的审批业绩",
+                        "name": "myApplicationPerformance",
+                        "icon": "pushpin-fill",
+                        "nav": 1,
+                        "component": "myApplicationPerformance",
+                        "children": []
+                    }
+                },
+                "nav": 1
+            },
+            "报表导出结果": {
+                "title": "报表导出结果",
+                "name": "报表导出结果",
+                "nav": 1,
+                "icon": "常规数据统计",
+                "children": {}
+            }
+        }
+    },
+    "operation": {
+        "name": "operation",
+        "component": "Layout",
+        "title": "运营管理",
+        "icon": "安全知识-应急常识库",
+        "nav": 1,
+        "children": {
+            "accountRole": {
+                "nav": 1,
+                "title": "账户与角色管理",
+                "name": "accountRole",
+                "icon": "peoples",
+                "component": "accountRole",
+                "children": {
+                    "admin_user_del": {
+                        "name": "admin_user_del",
+                        "title": "渠道方账号管理",
+                        "icon": "角色管理",
+                        "component": "",
+                        "children": [],
+                        "nav": 1
+                    },
+                    "role_get": {
+                        "name": "role_get",
+                        "title": "账户白名单",
+                        "icon": "角色管理",
+                        "component": "",
+                        "children": [],
+                        "nav": 1
+                    },
+                    "admin_user_list": {
+                        "name": "admin_user_list",
+                        "title": "账号管理",
+                        "icon": "角色管理",
+                        "component": "accountManagement",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "web_role_list": {
+                        "name": "web_role_list",
+                        "title": "角色管理",
+                        "icon": "角色管理",
+                        "component": "roleManagement",
+                        "nav": 1,
+                        "children": []
+                    }
+                }
+            },
+            "approvalCollection": {
+                "title": "分件管理",
+                "name": "approvalCollection",
+                "icon": "sever-fill",
+                "nav": 1,
+                "component": "view",
+                "children": {
+                    "admin_user_put": {
+                        "name": "admin_user_put",
+                        "title": "组管理",
+                        "icon": "peoples",
+                        "component": "",
+                        "children": [],
+                        "nav": 1
+                    },
+                    "collection_stage_list": {
+                        "name": "collection_stage_list",
+                        "title": "催收阶段",
+                        "icon": "隐患排查管理-隐患排查",
+                        "component": "collectionStage",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "collection_stage_group_list": {
+                        "name": "collection_stage_group_list",
+                        "title": "催收阶段-组",
+                        "icon": "隐患排查管理-隐患排查",
+                        "component": "collectionStageGroup",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "collection_group_list": {
+                        "name": "collection_group_list",
+                        "title": "审批阶段",
+                        "icon": "隐患排查管理-隐患排查",
+                        "component": "collectionGroup",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "审批阶段-组": {
+                        "title": "审批阶段-组",
+                        "name": "审批阶段-组",
+                        "icon": "隐患排查管理-隐患排查",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "company_list": {
+                        "name": "company_list",
+                        "title": "催收公司",
+                        "icon": "faxian",
+                        "component": "collectionCompany",
+                        "nav": 1,
+                        "children": []
+                    }
+                }
+            },
+            "applyConfiguration": {
+                "title": "申请审批配置",
+                "name": "applyConfiguration",
+                "icon": "设置",
+                "component": "applyConfiguration",
+                "children": {
+                    "risk_rule_list": {
+                        "name": "risk_rule_list",
+                        "title": "规则管理",
+                        "icon": "flag-fill",
+                        "component": "ruleManagement",
+                        "children": [],
+                        "nav": 1
+                    },
+                    "机审规则配置": {
+                        "title": "机审规则配置",
+                        "name": "机审规则配置",
+                        "icon": "设置",
+                        "nav": 1,
+                        "component": "机审规则配置",
+                        "children": []
+                    },
+                    "运营配置": {
+                        "title": "运营配置",
+                        "name": "运营配置",
+                        "component": "运营配置",
+                        "nav": 1,
+                        "icon": "设置",
+                        "children": []
+                    },
+                    "blacklist_list": {
+                        "name": "blacklist_list",
+                        "title": "黑名单管理",
+                        "icon": "sever-fill",
+                        "component": "blacklistManagement",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "stepManagement": {
+                        "title": "审批流程",
+                        "name": "stepManagement",
+                        "icon": "nested",
+                        "nav": 1,
+                        "component": "stepManagement",
+                        "children": []
+                    },
+                    "tag_list": {
+                        "name": "tag_list",
+                        "title": "标签管理",
+                        "icon": "sever-fill",
+                        "component": "labelManagement",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "page_list": {
+                        "name": "page_list",
+                        "title": "详情页面配置",
+                        "icon": "sever-fill",
+                        "component": "detailPageConfiguration",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "contract_list": {
+                        "name": "contract_list",
+                        "title": "合同协议管理",
+                        "icon": "sever-fill",
+                        "component": "contractManagement",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "help_list": {
+                        "name": "help_list",
+                        "title": "App帮助中心",
+                        "icon": "产品模版管理",
+                        "component": "appHelp",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "APP公告管理": {
+                        "title": "APP公告管理",
+                        "name": "APP公告管理",
+                        "nav": 1,
+                        "icon": "clipboard",
+                        "children": []
+                    }
+                },
+                "nav": 1
+            },
+            "issueManagement": {
+                "title": "放款管理",
+                "name": "issueManagement",
+                "nav": 1,
+                "component": "issueManagement",
+                "icon": "money collect-fill",
+                "children": {
+                    "lending_cancel_list": {
+                        "name": "lending_cancel_list",
+                        "title": "skypay取消放款",
+                        "icon": "faxian",
+                        "component": "skypayCancel",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "lending_failed_list": {
+                        "name": "lending_failed_list",
+                        "title": "放款失败订单管理",
+                        "icon": "faxian",
+                        "component": "lendingFailureOrder",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "amount_control_list": {
+                        "name": "amount_control_list",
+                        "title": "额度管理",
+                        "icon": "faxian",
+                        "component": "amountControlManagement",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "issue_abnormal": {
+                        "name": "issue_abnormal",
+                        "title": "异常放款管理",
+                        "icon": "faxian",
+                        "component": "handleFailedIssue",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "issue_abnormal_upload": {
+                        "name": "issue_abnormal_upload",
+                        "title": "批量放款",
+                        "component": "",
+                        "children": []
+                    }
+                }
+            },
+            "smsManagement": {
+                "nav": 1,
+                "title": "短信管理",
+                "name": "smsManagement",
+                "icon": "消息",
+                "component": "smsManagement",
+                "children": {
+                    "sms_code_list": {
+                        "name": "sms_code_list",
+                        "title": "批量发送短信",
+                        "component": "",
+                        "children": [],
+                        "icon": "message",
+                        "nav": 1
+                    },
+                    "sms_sendtime_list": {
+                        "name": "sms_sendtime_list",
+                        "title": "短信发送时间",
+                        "icon": "message",
+                        "component": "smsSendTime",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "sms_template_list": {
+                        "name": "sms_template_list",
+                        "title": "短信模板",
+                        "icon": "message",
+                        "component": "smsTemplate",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "老用户激活短信": {
+                        "nav": 1,
+                        "title": "老用户激活短信",
+                        "name": "老用户激活短信",
+                        "icon": "message",
+                        "children": []
+                    },
+                    "sms_list": {
+                        "name": "sms_list",
+                        "title": "短信记录",
+                        "icon": "message",
+                        "component": "smsRecord",
+                        "nav": 1,
+                        "children": []
+                    }
+                }
+            },
+            "customerProduct": {
+                "title": "产品与用户等级管理",
+                "name": "customerProduct",
+                "icon": "user",
+                "nav": 1,
+                "component": "customerProduct",
+                "children": {
+                    "role_put": {
+                        "name": "role_put",
+                        "title": "批量修改用户等级",
+                        "icon": "people",
+                        "component": "",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "user_level_list": {
+                        "title": "用户等级",
+                        "name": "user_level_list",
+                        "component": "customerGrade",
+                        "icon": "size",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "level_list": {
+                        "name": "level_list",
+                        "title": "用户等级管理",
+                        "icon": "list",
+                        "component": "customerGradeManagement",
+                        "nav": 1,
+                        "children": [
+                            {
+                                "name": "user_level_put",
+                                "path": "/admin/loan_user/level",
+                                "method": "PUT",
+                                "title": "用户等级修改",
+                                "icon": "",
+                                "component": "",
+                                "children": []
+                            },
+                            {
+                                "name": "level_put",
+                                "path": "/admin/level",
+                                "method": "PUT",
+                                "title": "用户等级编辑",
+                                "component": "",
+                                "children": []
+                            },
+                            {
+                                "name": "level_del",
+                                "path": "/admin/level",
+                                "method": "DELETE",
+                                "title": "用户等级删除",
+                                "component": "",
+                                "children": []
+                            },
+                            {
+                                "name": "level_post",
+                                "path": "/admin/level",
+                                "method": "POST",
+                                "title": "用户等级添加",
+                                "component": "",
+                                "children": []
+                            }
+                        ]
+                    },
+                    "product_list": {
+                        "name": "product_list",
+                        "title": "产品管理",
+                        "icon": "qq",
+                        "component": "productManagement",
+                        "nav": 1,
+                        "children": [
+                            {
+                                "name": "product_post",
+                                "path": "/admin/product",
+                                "method": "POST",
+                                "title": "新增产品",
+                                "icon": "",
+                                "component": "",
+                                "children": []
+                            },
+                            {
+                                "name": "product_put",
+                                "path": "/admin/product",
+                                "method": "PUT",
+                                "title": "修改产品",
+                                "icon": "",
+                                "component": "",
+                                "children": []
+                            }
+                        ]
+                    },
+                    "product_level_list": {
+                        "name": "product_level_list",
+                        "title": "产品与用户等级绑定管理",
+                        "icon": "set",
+                        "component": "productGrade",
+                        "nav": 1,
+                        "children": [
+                            {
+                                "name": "product_level_del",
+                                "path": "/admin/product_level",
+                                "method": "DELETE",
+                                "title": "删除产品和用户级别关系",
+                                "icon": "",
+                                "component": "",
+                                "children": []
+                            },
+                            {
+                                "name": "product_level_put",
+                                "path": "/admin/product_level",
+                                "method": "PUT",
+                                "title": "编辑产品和用户级别关系",
+                                "icon": "",
+                                "component": "",
+                                "children": []
+                            },
+                            {
+                                "name": "product_level_post",
+                                "path": "/admin/product_level",
+                                "method": "POST",
+                                "title": "编辑产品和用户级别关系",
+                                "icon": "",
+                                "component": "",
+                                "children": []
+                            }
+                        ]
+                    }
+                }
+            },
+            "review_task_list": {
+                "name": "review_task_list",
+                "title": "任务管理",
+                "icon": "eye-open",
+                "component": "taskManagement",
+                "nav": 1,
+                "children": {}
+            },
+            "bank_channel_list": {
+                "name": "bank_channel_list",
+                "title": "银行渠道",
+                "icon": "设备开发",
+                "component": "bankChannel",
+                "nav": 1,
+                "children": {}
+            },
+            "bannerManagement": {
+                "title": "广告管理",
+                "name": "bannerManagement",
+                "component": "view",
+                "icon": "学习监控",
+                "children": {
+                    "advertise_cat_list": {
+                        "name": "advertise_cat_list",
+                        "title": "广告分类",
+                        "icon": "写作",
+                        "component": "bannerCategory",
+                        "nav": 1,
+                        "children": []
+                    },
+                    "advertise_list": {
+                        "name": "advertise_list",
+                        "title": "广告列表",
+                        "icon": "star",
+                        "component": "bannerList",
+                        "nav": 1,
+                        "children": []
+                    }
+                },
+                "nav": 1
+            },
+            "collection_category_list": {
+                "name": "collection_category_list",
+                "title": "催收日志类型",
+                "icon": "分类",
+                "component": "collectionLogType",
+                "nav": 1,
+                "children": {}
+            },
+            "config_list": {
+                "name": "config_list",
+                "title": "配置管理",
+                "icon": "设置",
+                "component": "config",
+                "nav": 1,
+                "children": {}
+            }
+        }
+    },
+    "system": {
+        "name": "system",
+        "component": "Layout",
+        "title": "系统管理",
+        "icon": "分类",
+        "nav": 0,
+        "children": {
+            "menu_page": {
+                "name": "menu_page",
+                "title": "菜单管理",
+                "icon": "flag-fill",
+                "component": "menu",
+                "nav": 1,
+                "children": {}
+            }
+        }
+    },
+    "404": {
+        "redirect": "/404",
+        "title": "404",
+        "name": "404",
+        "children": {
+            "loan_order_detail_get": {
+                "nav": 0,
+                "title": "订单详情",
+                "name": "loan_order_detail_get",
+                "component": "orderNumber",
+                "children": {
+                    "tag_options_get": {
+                        "name": "tag_options_get",
+                        "title": "标签选项",
+                        "icon": "",
+                        "component": "",
+                        "children": []
+                    },
+                    "collection_log_get": {
+                        "name": "collection_log_get",
+                        "title": "详情页-催收日志",
+                        "component": "",
+                        "children": []
+                    },
+                    "review_task_pass_post": {
+                        "name": "review_task_pass_post",
+                        "title": "通过某个审批案件任务",
+                        "icon": "",
+                        "component": "",
+                        "children": []
+                    },
+                    "change_name_put": {
+                        "name": "change_name_put",
+                        "title": "修改名称",
+                        "icon": "",
+                        "component": "",
+                        "children": []
+                    },
+                    "review_record_post": {
+                        "name": "review_record_post",
+                        "title": "新增审批记录",
+                        "icon": "",
+                        "component": "",
+                        "children": []
+                    },
+                    "loan_config_info_get": {
+                        "name": "loan_config_info_get",
+                        "title": "贷款操作信息配置",
+                        "icon": "",
+                        "component": "",
+                        "children": [],
+                        "nav": 0
+                    },
+                    "revert_put": {
+                        "name": "revert_put",
+                        "title": "状态回退",
+                        "icon": "",
+                        "component": "",
+                        "children": []
+                    },
+                    "force_pass_put": {
+                        "name": "force_pass_put",
+                        "title": "强制通过",
+                        "icon": "",
+                        "component": "",
+                        "children": []
+                    },
+                    "system_close_put": {
+                        "name": "system_close_put",
+                        "title": "系统关闭",
+                        "icon": "",
+                        "component": "",
+                        "children": []
+                    }
+                }
+            },
+            "product_valid_list": {
+                "name": "product_valid_list",
+                "title": "有效的产品列表",
+                "icon": "",
+                "component": "",
+                "children": {}
+            }
+        }
+    }
+}
